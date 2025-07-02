@@ -1,0 +1,12 @@
+def duplicates(list):
+  new=set()
+  result=[]
+  for i in list:
+   if i not in new:
+    new.add(i)
+    result.append(i)
+  return result
+
+list=[1,2,3,4,5,4,3]
+result=duplicates(list)
+print(result)  
