@@ -1,0 +1,14 @@
+text = "hello world"
+new=[]
+max_count=0
+for char in text:
+    if char not in new:
+        count=text.count(char)
+        new.append(char)
+        if count>max_count:
+            max_count=count
+   
+
+for char in new:
+    if text.count(char)==max_count:
+        print(char,";",max_count)
