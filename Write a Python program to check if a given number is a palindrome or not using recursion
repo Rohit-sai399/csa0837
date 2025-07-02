@@ -1,0 +1,12 @@
+def is_palindrome(str_num):
+  if(len(str_num)<1):
+    return true
+  if(str_num[0]!=str_num[-1]):
+    return false
+  return str_num[1:-1]
+  
+num=12321
+if is_palindrome(str(num)):
+  print(f"{num} is palindrome")
+else:
+  print(f"{num} is not a palindrome")
