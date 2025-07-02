@@ -1,0 +1,11 @@
+def nr(num):
+ x=num/2
+ while True:
+  prev=x
+  x=(x+num/x)/2
+  if abs(x-prev)<1e-10:
+   break
+ return x
+num=9
+x=nr(num)
+print(x)
