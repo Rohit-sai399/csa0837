@@ -1,0 +1,11 @@
+str="i love vizag"
+freq={}
+for i in str:
+  if i in freq:
+    freq[i]+=1
+  else:
+    freq[i]=1
+print("frequencies of characters=")
+
+for i,count in freq.items():
+  print(f"'{i}':{count}")
