@@ -1,0 +1,10 @@
+str="heelo carl from india and we will"
+words=str.split()
+freq={}
+for i in words:
+    if i in freq:
+        freq[i]+=1
+    else:
+        freq[i]=1
+for key,values in freq.items():
+    print(key,":",values)
