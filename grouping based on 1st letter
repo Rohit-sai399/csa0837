@@ -1,0 +1,9 @@
+words = ['apple', 'ant', 'banana', 'ball', 'cat', 'car']
+dict={}
+for word in words:
+    first_letter=word[0]
+    if first_letter not in dict:
+        dict[first_letter]=[word]
+    else:
+        dict[first_letter].append(word)
+print(dict)
