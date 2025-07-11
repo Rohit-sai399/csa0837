@@ -1,0 +1,9 @@
+my_dict = {'a': 10, 'b': 20, 'c': 10, 'd': 30, 'e': 20}
+seen=[]
+unique={}
+for key,values in my_dict.items():
+    if values not in seen:
+        unique[key]=values
+        seen.append(values)
+print(unique)
+print(seen)
