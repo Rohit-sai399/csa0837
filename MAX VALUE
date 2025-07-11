@@ -1,0 +1,9 @@
+dict={1:3,3:6,7:9}
+maxi=list(dict.keys())[0]
+max_key=maxi
+max_value=dict[max_key]
+for i in dict:
+    if dict[i]>max_value:
+       max_value=dict[i]
+       max_key=i
+print(f"{max_key}:{max_value}")
