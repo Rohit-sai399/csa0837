@@ -1,0 +1,9 @@
+man={"koi":18,"fjd":45}
+sorted_keys=dict(sorted(man.items()))
+print(sorted_keys)
+sorted_keys_desc=dict(sorted(man.items(),reverse=True))
+print(sorted_keys_desc)
+sorted_values=dict(sorted(man.items(),key=lambda items:items[1]))
+print(sorted_values)
+sorted_values_desc=dict(sorted(man.items(),key=lambda items:items[1],reverse=True))
+print(sorted_values_desc)
