@@ -1,0 +1,10 @@
+
+students = {
+    'Alice': {'math': 85, 'science': 90},
+    'Bob': {'math': 78, 'science': 88},
+    'Charlie': {'math': 92, 'science': 81}
+}
+for name,subject in students.items():
+    print(f"{name} marks is: ")
+    for subject,marks in subject.items():
+        print(f"{subject}:{marks}")
