@@ -1,0 +1,9 @@
+students = {'Aman': 45, 'Riya': 89, 'Karan': 76, 'Pooja': 67}
+maxi=list(students.keys())[0]
+max_key=maxi
+max_value=students[maxi]
+for i in students:
+    if students[i]>max_value:
+      max_value=students[i]
+      max_key=i
+print(f"{max_key}:{max_value}")
